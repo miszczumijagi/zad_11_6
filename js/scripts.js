@@ -22,7 +22,7 @@ $(function() {
 		    var $column = $('<div>').addClass('column');
 			var $columnTitle = $('<h2>').addClass('column-title').text(self.name);
 			var $columnCardList = $('<ul>').addClass('column-card-list');
-			var $columnDelete = $('<button>').addClass('btn-delete btn btn-primary').text('x');
+			var $columnDelete = $('<button>').addClass('btn-delete btn btn-danger').text('x');
 			var $columnAddCard = $('<button>').addClass('add-card btn btn-primary').text('Add a card');
 			// ADDING EVENTS
 		    $columnDelete.click(function() {
@@ -64,7 +64,7 @@ $(function() {
 		    // CREATING THE BLOCKS
 		    var $card = $('<li>').addClass('card');
 		    var $cardDescription = $('<p>').addClass('card-description').text(self.description);
-		    var $cardDelete = $('<button>').addClass('btn-delete btn btn-primary').text('x');
+		    var $cardDelete = $('<button>').addClass('btn-delete btn btn-danger').text('x');
 
 		    // BINDING TO CLICK EVENT
 		    $cardDelete.click(function(){

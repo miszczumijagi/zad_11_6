@@ -4,33 +4,43 @@ body {
 	background: #8a96aa;
 }
 
-.board {
-	background: gray;
-	height: auto;
-	
-}
+
 
 .board h1 {
 	text-align: center;
 	font-family: 'Sedgwick Ave Display', cursive;
-	padding-top: 50px;
+	padding: 50px;
 	font-size: 52px;
+	background: gray;
+	color: white;
 }
 
 .board > .create-column {
-	margin: 5px;
+	margin: 30px auto;
+	display: block;
 	
 }
 
-
+.column-container {
+	display: flex;
+  	justify-content: space-around;
+  	flex-wrap: wrap;
+}
 
 
 .column {
 	float: left;
 	text-align: center;
-	width: calc(100% / 3);
-	border: 1px solid black;
+	-webkit-box-shadow: 3px 0px 5px 0px rgba(0, 0, 0, 0.64);
+   	-moz-box-shadow:    3px 0px 5px 0px rgba(0, 0, 0, 0.64);
+   	box-shadow:         3px 0px 5px 0px rgba(0, 0, 0, 0.64);
+   	margin: 10px;
+   	background: #4b6287;
+   	min-height: 200px;
+   	min-width: 300px;
+
 }
+
 
 .column-title {
 	font-family: 'Sedgwick Ave Display', cursive;
@@ -50,6 +60,12 @@ body {
 	margin: 5px;
 	float: left;
 	padding: 5px;
+
+}
+
+ul {
+	min-height: 50px;
+	list-style-type: none;
 
 }
 
